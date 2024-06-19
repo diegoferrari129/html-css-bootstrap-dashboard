@@ -13,18 +13,72 @@
 </head>
 <body>
     <!-- HEADER -->
-    <header class="position-fixed top-0 left-0 z-index-1">
+    <header class="fixed-top z-index-1">
 
-            <div class="content"></div>
+        <nav class="navbar navbar-expand-lg navbar-light pt-0">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img class="w-40 d-lg-none d-xl-none d-xxl-none" src="./img/img/mobile-logo.png" alt="boolean">
+                <img class="d-none d-lg-block d-xl-block d-xxl-block pt-1" src="./img/img/logo.svg" alt="">
+              </a>
+              <form class="w-100">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              </form>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">
+                        <i class="fa-solid fa-list-ul"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item dropstart">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <i class="fa-solid fa-bell" style="color: #ff8f00;"></i>
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                      <li><a class="dropdown-item" href="#">Logout</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+          </nav>
 
     </header>
 
     <!-- SIDEBAR MENU -->
-    <section class="sidebar position-fixed bottom-0 left-0">
-            <div class="d-flex flex-column" style="height: 100%;">
+    <section class="sidebar position-fixed bottom-0 start-0">
+            <div class="d-flex flex-column h-100 ps-3 text-white bg_sidebar">
 
-                <div class="content mb-auto"></div>
-                <div class="content"></div>
+                <div class="mt-4">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </div>
+                <div class="pt-3">
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <span class="ps-1">Stats</span>
+                </div>
+                <div class="pt-3 mb-auto">
+                    <i class="fa-solid fa-signal"></i>
+                    <span>Signals</span>
+                </div>
+                <div class="py-3">
+                    <i class="fa-solid fa-gear"></i>
+                    <span>Admin</span>
+                </div>
     
             </div>
     </section>
