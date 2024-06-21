@@ -42,7 +42,9 @@ main {
     margin-left: 10px;
 }
 
-
+.font-12 {
+    font-size: 12px;
+}
 
 .sidebar {
     background-color: #051e34;
@@ -54,6 +56,10 @@ main {
     background-image: url(../img/img/sidebar-bg.png);
 }
 
+.highlight-item:hover {
+    background-color: rgba(255, 255, 255, 0.479);
+}
+
 .img_avatar{
     width: 25px;
 }
@@ -62,7 +68,6 @@ main {
     .md-text-center {
         text-align: center;
     }
-
 }
 
 @media screen and (min-width: 992px) {
